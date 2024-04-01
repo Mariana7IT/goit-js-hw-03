@@ -1,12 +1,7 @@
 "use strict";
 
 function slugify(title) {
-    const lowercaseTitle = title.toLowerCase();
-    const wordsArray = lowercaseTitle.split(" ");
-    const slug = wordsArray.join("-");
-
-    return slug;
-    // return title.toLowerCase().split(' ').join('-');
+    return title.toLowerCase().split(' ').join('-');
 }
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
